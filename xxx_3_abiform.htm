@@ -1,0 +1,214 @@
+<DOCTYPE! html>
+ <html>
+    <head>
+	  <meta charset = "UTF-8">
+	  <title>Customer Feedback</title>
+	  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	  <link rel = "stylesheet" href = "xxx_2_chadestyles.htm.css">
+	</head>
+	   <body>
+	     <h1>Chade's Bycycle Company</h1>
+		 <img src = "xxx_2_bike.png.png" alt = "bike" width = "400"></img>
+		 <nav>
+	     <ul>
+		  <li><a href = "index.html">Chade's Bicycle Company</a></li>
+		  <li><a href = "xxx_2_cal.htm.html">Company Calendar</a></li>
+		  <li><a href = "xxx_2_contact.htm.html">Contact us</a></li>
+		  <li><a href = "xxx_3_abiform.htm">Customer Feedback</a></li>
+		  <li><a href = "xxx_3_staffdir.htm">Staff Directory</a></li>
+		  <li id = "showmenu" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href = "xxx_3_buying.htm" class="active">Buying Tips</a>
+		    <ul id = "menu">
+			  <li> 
+			      <a href = "xxx_3_buying.htm#Ride a bike">Tip 1</a>
+			      <a href = "xxx_3_buying.htm#For my child">Tip 2</a>
+			      <a href = "xxx_3_buying.htm#Test and ride">Tip 3</a>
+			      <a href = "xxx_3_buying.htm#Essentials">Tip 4</a>
+			      <a href = "xxx_3_buying.htm#Staff">Tip 5</a>
+			  </li>
+		   </ul>
+		   </li>
+		   <li><a href = "xxx_4_product.html">Product</a></li>
+		  <li><a href = "xxx_4_faq.htm">FAQ</a></li>
+		  <li onmouseover = "dropDownMenu2()" onmouseout = "stop2()"><a href = "xxx_4_bikelink.htm">Bikelink</a>
+		    <ul id = "secondMenu">
+			  <li> 
+			      <a href = "https://gdbclub.clubexpress.com/">Greater Dallas Bicyclists</a>
+			      <a href = "https://www.fwbaclub.org/">Fort Worth Bicycling Association</a>
+			      <a href = "http://carrolltoncycling.com/">Carrollton Cycling Club</a>
+			      <a href = "https://planobicycle.org/">Plano Bicycling Association</a>
+			      <a href = "https://thea.com/CC-Cycling-Club/">Corpus Christi Bicycle Club</a>
+				  <a href = "http://www.austinridgeriders.com/">Austin Ridge Riders</a>
+				  <a href = "https://utexascycling.com/">University of Texas Cycling Club</a>
+				  <a href = "https://houstonbicycleclub.wildapricot.org/">Houston Bicycle Club</a>
+			  </li>
+			</ul>
+			</li>
+		  <li><a href = "xxx_4_login.htm">Customer Login</a></li>
+		  <li><a href = "xxx_4_custorder.html">Custom Order</a></li>
+		 </ul>
+		 </nav>
+		 <form id = "form">
+		   <div class = "form">
+		     <label>First Name</label>
+			 <input id = "name" name = "firstname" type = "text" required>
+		   </div>
+		   <div class = "form">
+		     <label>Last Name</label>
+			 <input id = "name" name = "lastname" type = "text" required> 
+		   </div>
+		   <div class = "form">
+		     <label>Address</label>
+			 <input id = "address" name = "adress" type = "text" required>
+		   </div>
+		   <div class = "form">
+		     <label>City,State,Zip</label>
+			 <input id = "address" name = "citystatezip" type = "text" required>
+		   </div>
+		   <div class = "form">
+		     <label>Phone Number</label>
+			 <input id = "phone" name = "phone" type = "text" required>
+		   </div>
+		   <div class = "form">
+		     <label>Email</label>
+			 <input id = "email" name = "email" type = "text" required>
+			 <h3>Disclaimer:Email addresses will not be sold or given out in any form.</h3>
+		   </div>
+		   <div class = "form">
+		     <label>Suggestions</label>
+			 <textarea id = "suggestions" name = "suggestions" rows="4" cols="50"></textarea>
+		   </div>
+		   <div class = "form">
+		     <label>How did you hear of our site?</label>
+		   </div>
+		   <div class = "form">
+			 <label>TV Ad</label>
+			 <input id = "question" name = "question" type = "checkbox">
+			 <label >Internet</label>
+			 <input id = "question" name = "question" type = "checkbox">
+			 <label>Newspaper</label>
+			 <input id = "question" name = "question" type = "checkbox">
+			 <label>A Friend</label>
+			 <input id = "question" name = "question" type = "checkbox">
+			 <label>A Coworker</label>
+			 <input id = "question" name = "question" type = "checkbox">
+			 <label>Walked In</label>
+			 <input id = "question" name = "question" type = "checkbox">
+		   </div>
+		   <div class = "form">
+		     <label>Join Newsletter</label>
+			 <input id = "newsletter" name = "newsletter" type = "checkbox">
+		   </div>
+		   <div class = "form">
+		     <label>How many months do you bicycle a year?</label>
+			 <input id = "months" name = "months" type = "number">
+		   </div>
+		   <div class = "form">
+		     <label>Favorite Browser</label>
+			 </div>
+			 <div class = "form">
+			 <label>Chrome</label>
+			 <input id = "browser" name = "browser" type = "radio">
+			 <label>Safari</label>
+			 <input id = "browser" name = "browser" type = "radio">
+			 <label>Mozilla</label>
+			 <input id = "browser" name = "browser" type = "radio">
+		   </div>
+		   <button type = "submit" onclick = "return validateName()">Send Us Feedback</button>
+		   <button type = "reset">Clear Form</button>
+		   
+		 </form >
+		 </body>
+	     <hr>
+	     <footer>
+		   <p>Last Updated:</p>
+		   <p id = "demo"></p>
+		   <p>Email: chadesbicyclecompany@email.com</p>
+		   <a href = "xxx_3_abiform.htm"><img src = "xxx_2_mail.png.png" alt = "email" width = "50"></img></a>
+		   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   <div class = "col-2">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		 </footer>
+		   <script>
+		     var cur_date = new Date();
+			 
+			 document.getElementById("demo").innerHTML = cur_date;
+			 
+			function validateName() { 
+			
+			  var name = document.getElementById("name").value;
+			  var address = document.getElementById("address").value;
+			  var phone = document.getElementById("phone").value;
+			  var email = document.getElementById("email").value;
+			  var months = document.getElementById("months").value;
+			  var form =  document.getElementById("form");
+			  
+			  if (name === "" || name == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (address === "" || address == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (email === "" || email == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (phone === "" || phone == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (months < 0 || months > 12) {
+			    alert("Please fill in correct number of months within a year.");
+				return false;
+			  } else {
+			      alert("Thank you for your feedback.");
+				  document.getElementById("myForm").reset();
+				  return false;
+				  }
+				
+				}
+				
+			 function dropDownMenu() {
+			    var menu = document.getElementById("menu");
+				
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				}
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("menu");
+				menu.style.display = "none";
+			 }
+			function dropDownMenu2() {
+			   var secondMenu = document.getElementById("secondMenu");
+			   if (secondMenu.style.display = "none"){
+				secondMenu.style.display = "block";
+				} 
+			}
+			 function stop2() {
+				var secondMenu = document.getElementById("secondMenu");
+				secondMenu.style.display = "none";
+			 } 	
+		   </script>
+ </html>

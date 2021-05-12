@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+	  <meta charset = "UTF-8">
+	  <title>Chade's Bicycle Company</title>
+	  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	  <link rel = "stylesheet" href = "xxx_2_chadestyles.htm.css">
+	</head>
+	   <body>
+	     <h1>Chade's Bycycle Company</h1>
+		 <img src = "xxx_2_bike.png.png" alt = "bike" width = "400"></img>
+		 <nav>
+	     <ul>
+		  <li><a href = "index.html">Chade's Bicycle Company</a></li>
+		  <li><a href = "xxx_2_cal.htm.html">Company Calendar</a></li>
+		  <li><a href = "xxx_2_contact.htm.html">Contact us</a></li>
+		  <li><a href = "xxx_3_abiform.htm">Customer Feedback</a></li>
+		  <li><a href = "xxx_3_staffdir.htm">Staff Directory</a></li>
+		  <li id = "showmenu" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href = "xxx_3_buying.htm" class="active">Buying Tips</a>
+		    <ul id = "menu">
+			  <li> 
+			      <a href = "xxx_3_buying.htm#Ride a bike">Tip 1</a>
+			      <a href = "xxx_3_buying.htm#For my child">Tip 2</a>
+			      <a href = "xxx_3_buying.htm#Test and ride">Tip 3</a>
+			      <a href = "xxx_3_buying.htm#Essentials">Tip 4</a>
+			      <a href = "xxx_3_buying.htm#Staff">Tip 5</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li><a href = "xxx_4_product.html">Product</a></li>
+		  <li><a href = "xxx_4_faq.htm">FAQ</a></li>
+		  <li onmouseover = "dropDownMenu2()" onmouseout = "stop2()"><a href = "xxx_4_bikelink.htm">Bikelink</a>
+		    <ul id = "secondMenu">
+			  <li> 
+			      <a href = "https://gdbclub.clubexpress.com/">Greater Dallas Bicyclists</a>
+			      <a href = "https://www.fwbaclub.org/">Fort Worth Bicycling Association</a>
+			      <a href = "http://carrolltoncycling.com/">Carrollton Cycling Club</a>
+			      <a href = "https://planobicycle.org/">Plano Bicycling Association</a>
+			      <a href = "https://thea.com/CC-Cycling-Club/">Corpus Christi Bicycle Club</a>
+				  <a href = "http://www.austinridgeriders.com/">Austin Ridge Riders</a>
+				  <a href = "https://utexascycling.com/">University of Texas Cycling Club</a>
+				  <a href = "https://houstonbicycleclub.wildapricot.org/">Houston Bicycle Club</a>
+			  </li>
+			</ul>
+			</li>
+		  <li><a href = "xxx_4_login.htm">Customer Login</a></li>
+		  <li><a href = "xxx_4_custorder.html">Custom Order</a></li>
+		 </ul>
+		 </nav>
+		 <body>
+		   <div class = "customer">
+		    <form class = "custlogin">
+			  <div class = "loginform">
+			    <label>First Name</label>
+			    <input id = "name" name = "firstname" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>Last Name</label>
+			    <input id = "name" name = "lastname" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>Address</label>
+			    <input id = "adress" name = "address" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>City, State and Zip</label>
+			    <input id = "address" name = "address" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>Phone</label>
+			    <input id = "contact" name = "phone" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>Email</label>
+			    <input id = "contact" name = "email" type = "text" required>
+			  </div>
+			  <div class = "loginform">
+			    <label>Date of order</label>
+			    <p id = "demo3"></p>
+			  </div>
+			  <div class = "loginform">
+			    <label>Quantity of Bikes</label>
+			    <input id = "quantity" name = "quantity" type = "number" required>
+			  </div>
+			   <div class = "loginform">
+		     <label>Bike Type</label>
+		   </div>
+		   <div class = "loginform">
+			 <label>Mountain</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label >Road</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label>Comfort</label>
+			 <input id = "type" name = "type" type = "checkbox">
+		   </div>
+		   <div class = "loginform">
+		     <label>Bike Color</label>
+		   </div>
+		   <div class = "loginform">
+			 <label>Blue</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label >Red</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label>Black</label>
+			 <input id = "type" name = "type" type = "checkbox">
+		   </div>
+		   <div class = "loginform">
+		     <label>Bike Frame</label>
+		   </div>
+		   <div class = "loginform">
+			 <label>Commuter</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label >Cyclocross</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label>Sport</label>
+			 <input id = "type" name = "type" type = "checkbox">
+		   </div>
+		   <div class = "loginform">
+		     <label>Bike Rim</label>
+		   </div>
+		   <div class = "loginform">
+			 <label>MTB</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label >Road</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label>BMX</label>
+			 <input id = "type" name = "type" type = "checkbox">
+		   </div>
+		   <div class = "loginform">
+		     <label>Bike Speed</label>
+		   </div>
+		   <div class = "loginform">
+			 <label>1 Speed</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label >8 Speed</label>
+			 <input id = "type" name = "type" type = "checkbox">
+			 <label>12 Speed</label>
+			 <input id = "type" name = "type" type = "checkbox">
+		   </div>
+		   <button type = "submit" onclick = "return validateName()">Submit</button>
+		   <button type = "reset">Clear Form</button>
+			</form>
+		   </div>
+		   
+	   </body>
+	     <hr>
+	     <footer>
+		   <p>Last Updated:</p>
+		   <p id = "demo"></p>
+		   <p>Email: chadesbicyclecompany@email.com</p>
+		   <a href = "xxx_3_abiform.htm"><img src = "xxx_2_mail.png.png" alt = "email" width = "50"></img></a>
+		   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   <div class = "col-2">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		 </footer>
+		   <script>
+		     var cur_date = new Date();
+			 
+			 document.getElementById("demo").innerHTML = cur_date;
+			 
+			 var cur_date = new Date();
+			 
+			 document.getElementById("demo3").innerHTML = cur_date;
+			 
+			 function dropDownMenu() {
+			    var menu = document.getElementById("menu");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("menu");
+				menu.style.display = "none";
+			 }
+			 
+			 function validateName() { 
+			
+			  var name = document.getElementById("name").value;
+			  var address = document.getElementById("address").value;
+			  var contact = document.getElementById("contact").value;
+			  var quantity = document.getElementById("quantity").value;
+			  var loginform =  document.getElementById("loginform");
+			  
+			  if (name === "" || name == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (address === "" || address == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (contact === "" || contact == null) {
+			    alert("Please fill in missing fields.");
+				return false;
+			  } else if (quantity < 0) {
+			    alert("Please fill in correct number of bikes.");
+				return false;
+			  } else {
+			      alert("Thank you for your feedback.");
+				  document.getElementById("myForm").reset();
+				  return false;
+				  }
+				
+				}
+				function dropDownMenu2() {
+			   var secondMenu = document.getElementById("secondMenu");
+			   if (secondMenu.style.display = "none"){
+				secondMenu.style.display = "block";
+				} 
+			}
+			 function stop2() {
+				var secondMenu = document.getElementById("secondMenu");
+				secondMenu.style.display = "none";
+			 }
+		   </script>
+ </html>

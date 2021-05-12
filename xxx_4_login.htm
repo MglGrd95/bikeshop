@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+	  <meta charset = "UTF-8">
+	  <title>Chade's Bicycle Company</title>
+	  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	  <link rel = "stylesheet" href = "xxx_2_chadestyles.htm.css">
+	  <script type="text/javascript">
+      function showImg() {
+      
+         var imgNumber = randomInteger(9); // Return a random number from 0 to 9
+         document.write("<img src='"+imgNumber+".jpg' alt='' />");
+      }
+   </script>
+	</head>
+	   <body>
+	     <h1>Chade's Bycycle Company</h1>
+		 <img src = "xxx_2_bike.png.png" alt = "bike" width = "400"></img>
+		 <div class =  "sidebar">
+		 <nav>
+	     <ul>
+		  <li><a href = "index.html">Chade's Bicycle Company</a></li>
+		  <li><a href = "xxx_2_cal.htm.html">Company Calendar</a></li>
+		  <li><a href = "xxx_2_contact.htm.html">Contact us</a></li>
+		  <li><a href = "xxx_3_abiform.htm">Customer Feedback</a></li>
+		  <li><a href = "xxx_3_staffdir.htm">Staff Directory</a></li>
+		  <li id = "showmenu" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href = "xxx_3_buying.htm" class="active">Buying Tips</a>
+		    <ul id = "menu">
+			  <li> 
+			      <a href = "xxx_3_buying.htm#Ride a bike">Tip 1</a>
+			      <a href = "xxx_3_buying.htm#For my child">Tip 2</a>
+			      <a href = "xxx_3_buying.htm#Test and ride">Tip 3</a>
+			      <a href = "xxx_3_buying.htm#Essentials">Tip 4</a>
+			      <a href = "xxx_3_buying.htm#Staff">Tip 5</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li><a href = "xxx_4_product.html">Product</a></li>
+		  <li><a href = "xxx_4_faq.htm">FAQ</a></li>
+		  <li onmouseover = "dropDownMenu2()" onmouseout = "stop2()"><a href = "xxx_4_bikelink.htm">Bikelink</a>
+		    <ul id = "secondMenu">
+			  <li> 
+			      <a href = "https://gdbclub.clubexpress.com/">Greater Dallas Bicyclists</a>
+			      <a href = "https://www.fwbaclub.org/">Fort Worth Bicycling Association</a>
+			      <a href = "http://carrolltoncycling.com/">Carrollton Cycling Club</a>
+			      <a href = "https://planobicycle.org/">Plano Bicycling Association</a>
+			      <a href = "https://thea.com/CC-Cycling-Club/">Corpus Christi Bicycle Club</a>
+				  <a href = "http://www.austinridgeriders.com/">Austin Ridge Riders</a>
+				  <a href = "https://utexascycling.com/">University of Texas Cycling Club</a>
+				  <a href = "https://houstonbicycleclub.wildapricot.org/">Houston Bicycle Club</a>
+			  </li>
+			</ul>
+			</li>
+		  <li><a href = "xxx_4_login.htm">Customer Login</a></li>
+		  <li><a href = "xxx_4_custorder.html">Custom Order</a></li>
+		 </ul>
+		 </nav>
+		 </div>
+	   <body class = "main">
+	       <div class = "login">
+		     <form class = "loginform">
+	            <div class = "input">
+	              <label>Username</label>
+				  <input id = "login" type = "text" name = "username">
+	            </div>
+				<div class = "input">
+	              <label>Password</label>
+				  <input id = "login" type = "password" name = "password">
+	            </div>
+				<div class = "input">
+	              <label>Enter the numbers below for security</label>
+				  <input id = "security" type = "text" name = "securitynum">
+	            </div>
+				 <script type="text/javascript">
+                  showImg();
+                  showImg();
+                  showImg();
+                  showImg();
+                  showImg();
+               </script>
+			   <button type = "submit">Submit</button>
+	         </form>
+	       </div>
+	   </body>
+	     <hr>
+	     <footer>
+		   <p>Last Updated:</p>
+		   <p id = "demo"></p>
+		   <p>Email: chadesbicyclecompany@email.com</p>
+		   <a href = "xxx_3_abiform.htm"><img src = "xxx_2_mail.png.png" alt = "email" width = "50"></img></a>
+		   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   <div class = "col-2">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		 </footer>
+		   <script>
+		     var cur_date = new Date();
+			 
+			 document.getElementById("demo").innerHTML = cur_date;
+			 
+			 function dropDownMenu() {
+			    var menu = document.getElementById("menu");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("menu");
+				menu.style.display = "none";
+			 }
+			 function dropDownMenu2() {
+			   var secondMenu = document.getElementById("secondMenu");
+			   if (secondMenu.style.display = "none"){
+				secondMenu.style.display = "block";
+				} 
+			}
+			 function stop2() {
+				var secondMenu = document.getElementById("secondMenu");
+				secondMenu.style.display = "none";
+			 }
+			 
+			 function randomInteger(size) {
+             return Math.floor((size+1)*Math.random());
+             }
+			 
+			 
+		   </script>
+ </html>

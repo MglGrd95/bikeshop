@@ -1,0 +1,124 @@
+<DOCTYPE! html>
+ <html>
+    <head>
+	  <meta charset = "UTF-8">
+	  <title>Chade's Bicycle Company</title>
+	  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	  <link rel = "stylesheet" href = "xxx_2_chadestyles.htm.css">
+	</head>
+	   <body>
+	     <h1>Chade's Bycycle Company</h1>
+		 <img src = "xxx_2_bike.png.png" alt = "bike" width = "400"></img>
+		 <nav>
+	     <ul>
+		  <li><a href = "index.html">Chade's Bicycle Company</a></li>
+		  <li><a href = "xxx_2_cal.htm.html">Company Calendar</a></li>
+		  <li><a href = "xxx_2_contact.htm.html">Contact us</a></li>
+		  <li><a href = "xxx_3_abiform.htm">Customer Feedback</a></li>
+		  <li><a href = "xxx_3_staffdir.htm">Staff Directory</a></li>
+		  <li id = "showmenu" onmouseover = "dropDownMenu()" onmouseout = "stop()"><a href = "xxx_3_buying.htm" class="active">Buying Tips</a>
+		    <ul id = "menu">
+			  <li> 
+			      <a href = "xxx_3_buying.htm#Ride a bike">Tip 1</a>
+			      <a href = "xxx_3_buying.htm#For my child">Tip 2</a>
+			      <a href = "xxx_3_buying.htm#Test and ride">Tip 3</a>
+			      <a href = "xxx_3_buying.htm#Essentials">Tip 4</a>
+			      <a href = "xxx_3_buying.htm#Staff">Tip 5</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li><a href = "xxx_4_product.html">Product</a></li>
+		  <li><a href = "xxx_4_faq.htm">FAQ</a></li>
+		  <li onmouseover = "dropDownMenu2()" onmouseout = "stop2()"><a href = "xxx_4_bikelink.htm">Bikelink</a>
+		    <ul id = "secondMenu">
+			  <li> 
+			      <a href = "https://gdbclub.clubexpress.com/">Greater Dallas Bicyclists</a>
+			      <a href = "https://www.fwbaclub.org/">Fort Worth Bicycling Association</a>
+			      <a href = "http://carrolltoncycling.com/">Carrollton Cycling Club</a>
+			      <a href = "https://planobicycle.org/">Plano Bicycling Association</a>
+			      <a href = "https://thea.com/CC-Cycling-Club/">Corpus Christi Bicycle Club</a>
+				  <a href = "http://www.austinridgeriders.com/">Austin Ridge Riders</a>
+				  <a href = "https://utexascycling.com/">University of Texas Cycling Club</a>
+				  <a href = "https://houstonbicycleclub.wildapricot.org/">Houston Bicycle Club</a>
+			  </li>
+			</ul>
+			</li>
+		  <li><a href = "xxx_4_login.htm">Customer Login</a></li>
+		  <li><a href = "xxx_4_custorder.html">Custom Order</a></li>
+		 </ul>
+		 </nav>
+		 <body>
+	   
+	   <p>Hello Welcome to our webpage. Here at Chade's Bicycle Shop you can browse through our selection of bikes and services. We hope you enjoy looking through our
+	   website and we hope you get the help you are looking for.</p>
+	   <p>Mission Statement: The website aims to allow new comers and loyal customers to view our information and get services towards their bicycle needs but,
+	   not only that the website will also allow others to join us in our goal to help everyone to access bike ride locally in our state. We will support people
+	   of all ages and help provide the joy of bicycles through our sponsored drive which will allow others to donate their unused bikes as we will refurbished
+	   them and distribute to the public through the website.</p>
+	   <p>In the meantime we are working on the listings and prices for bikes so be on the lookout for that.</p>
+	   <p>Corporate address: 123 Main st,State 12345</p>
+	   <h4>Acceptable Use Polocy (AUP)</h4>
+	   <p>This acceptable use policy(AUP) sets out terms between you and us under which you may access our website. This AUP applies to all users and visitors of our site.
+          By agreeing to abide to our AUP you agree that you will not or can not copy any of our work or graphics.</p>
+		  </body>
+	     <hr>
+	     <footer>
+		   <p>Last Updated:</p>
+		   <p id = "demo"></p>
+		   <p>Email: chadesbicyclecompany@email.com</p>
+		   <a href = "xxx_3_abiform.htm"><img src = "xxx_2_mail.png.png" alt = "email" width = "50"></img></a>
+		   <div class = "row-1">
+		   <div class = "col-1">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   <div class = "col-2">
+		     <div class = "head">External Links</div>
+			   <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+			    <div>
+			      <a href="">Link</a>
+			   </div>
+		   </div>
+		   </div>
+		 </footer>
+		   <script>
+		     var cur_date = new Date();
+			 
+			 document.getElementById("demo").innerHTML = cur_date;
+			 
+			 function dropDownMenu() {
+			    var menu = document.getElementById("menu");
+				if (menu.style.display = "none"){
+				menu.style.display = "block";
+				} 
+			 }
+			 
+			 function stop() {
+			    var menu = document.getElementById("menu");
+				menu.style.display = "none";
+			 }
+			 function dropDownMenu2() {
+			   var secondMenu = document.getElementById("secondMenu");
+			   if (secondMenu.style.display = "none"){
+				secondMenu.style.display = "block";
+				} 
+			}
+			 function stop2() {
+				var secondMenu = document.getElementById("secondMenu");
+				secondMenu.style.display = "none";
+			 }
+		   </script>
+ </html>

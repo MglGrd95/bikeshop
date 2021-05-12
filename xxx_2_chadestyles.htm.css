@@ -1,0 +1,171 @@
+body {
+	text-align: center;
+}
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+	display: inline;
+}
+li {
+	display: inline;
+	padding: 8px;
+}
+table {
+	margin-top: 15;
+	margin-bottom: 15;
+	background-color: AFEEEE;
+	border-color: 000080;
+
+}
+.columns {
+	column-count: 3;
+	column-width: 250px;
+}
+ol {
+	margin: 0;
+}
+div.form {
+	marging: auto;
+	border: 3px solid black;
+	width: 100%;
+	padding: 15px;
+}
+table.staff{
+	margin-top: 15;
+	margin-bottom: 15;
+	background-color: white;
+	border-color: white;
+
+}
+div.staff {
+	padding-left: 35%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+h3.faq {
+  color: red;
+}
+p.faq {
+  color: blue;
+}
+div.col-1 {
+	float: left;
+	padding-left: 30%;
+}
+.columns {
+	column-count: 3;
+	column-width: 300px;
+}
+ol {
+	margin: 0;
+}
+#menu {
+	width: 2%;
+	position: absolute;
+	float: right;
+	background-color: #eee;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: none;
+	margin-left: 26%;
+}
+#menu a {
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	background-color: #eee;
+}
+#menu a:hover; {
+	text-decoration: none;
+}
+#menu ul li {
+	list-style: none;
+	float: left;
+}
+
+#secondMenu {
+	width: 5%;
+	position: absolute;
+	float: right;
+	background-color: #eee;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: none;
+	margin-left: 33%;
+}
+#secondMenu a {
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	background-color: #eee;
+}
+#secondMenu a:hover; {
+	text-decoration: none;
+}
+#secondMenu ul li {
+	list-style: none;
+	float: left;
+}
+/*looked up sidebar or sidenav in w3schools.com*/
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media only screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@media only screen and (min-width: 640px){
+	table {
+	margin-top: 30;
+	margin-bottom: 40;
+	background-color: AFEEEE;
+	border-color: 000080;
+}
+.columns {
+	column-count: 3;
+	column-width: 300px;
+}
+ol {
+	margin: 0;
+}
+}
+}
+@media only screen and (min-width: 812px) {
+	table {
+	margin-top: 30;
+	margin-bottom: 40;
+	background-color: AFEEEE;
+	border-color: 000080;
+}
+@media (max-width: 1024px) {
+	img {
+		width: 100%;
+}
